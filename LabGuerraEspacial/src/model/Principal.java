@@ -1,8 +1,7 @@
 package model;
 
-public class Matrices {
-
-	//va sumando la multiplicacion en el x,y de la nueva matriz
+public class Principal {//va sumando la multiplicacion en el x,y de la nueva matriz
+	
 	public static int[][] multiplicacionUno(int[][] A, int[][] B){
 		
 		int[][] C = new int [A.length][B[0].length];
@@ -33,26 +32,28 @@ public class Matrices {
 				}
 			}
 		}
-		
-		// crear arreglo llenar lo con las sumas y luego agragar los resultados 
-		int[][] C = new int [A.length][B[0].length];a la nueva matriz
-		
+
+		int[] suma = new int[B.length * B.length];
 		int z = 0; k = 0;
+		
+		for(int i = 0; i < suma.length; i++) {
+			while(k < arreglo.length && z < B.length) {
+				suma[i] += arreglo[k];
+				k++; z++;
+			}
+			z = 0;
+		}
+		
+		int[][] C = new int [A.length][B[0].length];
+		k = 0;
 		
 		for(int i = 0; i < C.length; i++) {
 			for( int j = 0; j < C[0].length; j++) {
-				while(z < B.length) {
-					C[i][j] += arreglo[k];
-					z++;
-					k++;
-				}
-				z = 0;				
+				C[i][j] = suma[k];
+				k++;
 			}
 		}
-		
-		
-		return C;
-		
+		return C;	
 	}
 	
 	// en el x,y de la nueva matriz mete el producto punto de una
