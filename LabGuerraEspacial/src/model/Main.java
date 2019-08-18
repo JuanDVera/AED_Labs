@@ -1,15 +1,23 @@
 package model;
 
-public class Principal {//va sumando la multiplicacion en el x,y de la nueva matriz
-	
+public class Main {
+
+	/**
+	 * <pre> A and B are matrices that A(m*n)  ^ B(n*p)
+	 * first method to operate the matrices. multiply two matrices
+	 * C[c(i)] += A[x,k] * B[k,y] to k < n
+	 * @param A, the matrix that is going to be multiplied with B
+	 * @param B, is a recorded, saved matrix from past battles
+	 * @return a brand new matrix "C" with the result
+	 */
 	public static int[][] multiplicacionUno(int[][] A, int[][] B){
 		
-		int[][] C = new int [A.length][B[0].length];
+		int[][] C = new int [A.length][B[0].length];// C(m*p)
 		
 		for (int i = 0; i < C.length; i++) {
 			  for (int j = 0; j < C[i].length; j++) {
 			    for (int z = 0; z<B.length; z++) {
-			      C [i][j] += A[i][z] * B[z][j]; 
+			      C [i][j] += A[i][z] * B[z][j];
 			    }
 			  }
 			}		
