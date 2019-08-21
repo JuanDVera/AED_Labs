@@ -25,7 +25,7 @@ public class Main {
 		return C;
 	}
 	
-	//guarda las multiplicaciones y luego va sumando y agregando en el x,y de la nueva matriz 
+	//guarda las multiplicaciones, guarda sumas y agrega a la nueva matriz
 	public static int[][] multiplicacionDos(int[][] A, int[][] B){
 		
 		int [] arreglo = new int[A.length * B[0].length * B.length];
