@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="366.0" prefWidth="485.0" style="-fx-background-image: url(.\Space.jpg);" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Label layoutX="121.0" layoutY="39.0" text="SpaceWar">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Label>
+      <Button layoutX="191.0" layoutY="158.0" mnemonicParsing="false" text="Start" />
+      <Button layoutX="191.0" layoutY="205.0" mnemonicParsing="false" text="Instruction" />
+      <Button layoutX="191.0" layoutY="259.0" mnemonicParsing="false" text="Exit" />
+   </children>
+</AnchorPane>
