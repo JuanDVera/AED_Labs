@@ -21,7 +21,7 @@ public class MainInterface extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		Parent root = FXMLLoader.load(getClass().getResource("./Principal.fxml"));
-		Scene scene = new Scene(root);
+		Scene scene = new Scene(root, 1100, 800);
 		
 		primaryStage.setScene(scene);
 		primaryStage.setMaximized(false);
