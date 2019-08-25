@@ -2,21 +2,22 @@ package model;
 
 public class Ship {
 	
-	private String rank;
+	
 	private int health;
 	private boolean dead;
-	public Ship(String rank, boolean dead) {
+	public Ship( boolean dead) {
 		super();
-		this.rank = rank;
+		
 		this.health = 100;
 		this.dead = dead;
 	}
-	public String getRank() {
-		return rank;
+	public Ship() {
+		super();
+		
+		this.health = 100;
+		this.dead = true;
 	}
-	public void setRank(String rank) {
-		this.rank = rank;
-	}
+	
 	public int getHealth() {
 		return health;
 	}
@@ -30,6 +31,22 @@ public class Ship {
 		this.dead = dead;
 	}
 	
+	
+	public boolean isPrime(int number) {
+		int c = 2;
+		boolean prime=true;
+		 
+		while ((prime) && (c!=number)){
+		  if (number % c == 0)
+		    prime = false;
+		  c++;
+		
+		
+		
+	}
+		return prime;
+	
+	}
 	
 	
 

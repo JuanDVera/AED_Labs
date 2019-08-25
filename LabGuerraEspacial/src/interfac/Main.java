@@ -1,6 +1,10 @@
 package interfac;
 
+import model.Ship;
+
 public class Main {
+	
+	
 
 	/**
 	 * <pre> A and B are matrices that A(m*n)  ^ B(n*p)
@@ -127,6 +131,12 @@ public class Main {
 			}
 			System.out.println();
 		}
+		
+		
+		
+		
+		
+		
 		
 	}	
 }
