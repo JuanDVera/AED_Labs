@@ -6,16 +6,15 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="366.0" prefWidth="485.0" style="-fx-background-image: url(.\Space.jpg);" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-image: url('file:Docs/Space.jpg');" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="121.0" layoutY="39.0" text="SpaceWar">
+      <Label layoutX="289.0" layoutY="34.0" text="SpaceWar">
          <font>
             <Font size="55.0" />
          </font>
       </Label>
-      <Button layoutX="191.0" layoutY="158.0" mnemonicParsing="false" text="Start" />
-      <Button layoutX="191.0" layoutY="205.0" mnemonicParsing="false" text="Instruction" />
-      <Button layoutX="191.0" layoutY="259.0" mnemonicParsing="false" text="Exit" />
+      <Button layoutX="311.0" layoutY="170.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="103.0" text="Start" />
+      <Button layoutX="315.0" layoutY="232.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="103.0" text="Instruction" />
+      <Button layoutX="315.0" layoutY="291.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="95.0" text="Exit" />
    </children>
 </AnchorPane>

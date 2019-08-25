@@ -1,25 +1,30 @@
 package interfac;
 
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+
+
+
 public class MainInterface extends Application {
 
 	@Override
-	public void start(Stage primaryStage) {
-		try {
-			BorderPane root = new BorderPane();
-			Scene scene = new Scene(root,1500,1600);
-			scene.getStylesheets().add(getClass().getResource("Principal.fxml").toExternalForm());
-			primaryStage.setScene(scene);
-			primaryStage.show();
-		} catch(Exception e) {
-			e.printStackTrace();
-		}
-	}
+	public void start(Stage primaryStage) throws Exception {
+		Parent root = FXMLLoader.load(getClass().getResource("./Principal.fxml"));
+		Scene scene = new Scene(root);
+		
+		primaryStage.setScene(scene);
+		primaryStage.setMaximized(false);
 
+		primaryStage.show();
+	}
+			
 	public static void main(String[] args) {
 		launch(args);
 	}
