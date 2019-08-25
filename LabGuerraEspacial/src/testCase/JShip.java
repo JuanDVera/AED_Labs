@@ -12,7 +12,7 @@ class JShip {
 
 	
 	void Escenario1() {
-		ship= new Ship();
+		ship= new Ship(2);
 	}
 	
 	@Test
@@ -27,13 +27,20 @@ class JShip {
 		int e= 6;
 		int f= 7;
 		int g= 8;
-		assertTrue(ship.isPrime(a)==true);
-		assertTrue(ship.isPrime(b)==true);
-		assertTrue(ship.isPrime(c)==false);
-		assertTrue(ship.isPrime(d)==true);
-		assertTrue(ship.isPrime(e)==false);
-		assertTrue(ship.isPrime(f)==true);
-		assertTrue(ship.isPrime(g)==false);
+		ship.setPrime(a);
+		assertTrue(ship.isPrime()==true);
+		ship.setPrime(b);
+		assertTrue(ship.isPrime()==true);
+		ship.setPrime(c);
+		assertTrue(ship.isPrime()==false);
+		ship.setPrime(d);
+		assertTrue(ship.isPrime()==true);
+		ship.setPrime(e);
+		assertTrue(ship.isPrime()==false);
+		ship.setPrime(f);
+		assertTrue(ship.isPrime()==true);
+		ship.setPrime(g);
+		assertTrue(ship.isPrime()==false);
 		
 		
 	}
