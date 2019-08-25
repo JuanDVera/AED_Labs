@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="420.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="191.0" layoutY="26.0" prefHeight="68.0" prefWidth="193.0" text="Instructions" textAlignment="CENTER">
+         <font>
+            <Font name="Corbel" size="22.0" />
+         </font>
+      </Label>
+      <TextField layoutX="16.0" layoutY="105.0" prefHeight="309.0" prefWidth="420.0" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Back" />
+   </children>
+</AnchorPane>
