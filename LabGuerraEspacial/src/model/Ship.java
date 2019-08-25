@@ -1,20 +1,25 @@
 package model;
 
 public class Ship {
-	
 	 
 	private int prime;
 	private boolean dead;
+	
 	public Ship( boolean dead, int prime) {
 		super();
 		
 		this.prime = prime;
 		this.dead = dead;
 	}
-	public Ship(int prime) {
-		super();
-		this.prime=prime;
-	this.dead = false;
+	
+//	public Ship(int prime) {
+//		super();
+//		this.prime=prime;
+//	this.dead = false;
+//	}
+	
+	public Ship (int number) {
+		prime = number;
 	}
 	
 	public int getPrime() {
