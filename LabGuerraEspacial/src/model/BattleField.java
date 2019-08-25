@@ -16,11 +16,18 @@ public class BattleField {
 		
 		// two random x an y
 		
-		int x = 0, y = 0;
+		int x = (int) (Math.random() * 20 + 1);
+		int y = (int) (Math.random() * 20 + 1);
 		
 		int[][] matrix = new int[x][y];
 		
 		// random numbers while add
+		
+		for(int i =0; i < x; i++) {
+			for(int j = 0; j < y; j++) {
+				matrix[i][j] = (int) (Math.random() * 100 + 1);
+			}
+		}
 		
 		matrices.add(matrix);
 	}
@@ -29,7 +36,13 @@ public class BattleField {
 		
 		int[][] matrix = new int[m][n];
 
-		// random
+		// random numbers while add
+		
+		for(int i =0; i < m; i++) {
+			for(int j = 0; j < n; j++) {
+				matrix[i][j] = (int) (Math.random() * 100 + 1);
+			}
+		}
 		
 		matrices.add(matrix);
 	}
@@ -97,7 +110,7 @@ public class BattleField {
 			}
 		}
 
-		int[] suma = new int[B.length * B.length];
+		int[] suma = new int[A.length * B[0].length];
 		int z = 0; k = 0;
 		
 		for(int i = 0; i < suma.length; i++) {

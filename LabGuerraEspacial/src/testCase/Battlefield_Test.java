@@ -10,6 +10,8 @@ class Battlefield_Test {
 
 	private BattleField bt;
 	
+	private int expected;
+	
 	void setUp1() {
 		
 		bt = new BattleField();
@@ -22,7 +24,7 @@ class Battlefield_Test {
 		
 		bt.createShips(numbers, m, n);
 		
-		m =  3; n = 2;
+		m = 3; n = 2;
 		
 		numbers = new int[m*n];
 		
@@ -31,6 +33,23 @@ class Battlefield_Test {
 		numbers[4] = 2; numbers[5] = 3;	
 		
 		bt.createShips(numbers, m, n);		
+	}
+	
+	void setUp2() {
+		
+		bt = new BattleField();
+		
+		int m = 4, n = 5;
+		
+		bt.createShips(m, n);
+		
+		m = 5; n = 7; 
+		
+		bt.createShips(m, n);
+		
+		for(int k = 0; k < m; k++) {
+			expected += bt.getMatrices().get(0)[0][k] * bt.getMatrices().get(1)[k][0];
+		}
 	}
 	
 	@Test
@@ -44,6 +63,13 @@ class Battlefield_Test {
 		assertEquals(10, bt.getDefinitive()[0][1]);
 		assertEquals(37, bt.getDefinitive()[1][0]);
 		assertEquals(22, bt.getDefinitive()[1][1]);
+		
+		
+		setUp2();
+		
+		bt.MultiplationOne(bt.getMatrices().get(0), bt.getMatrices().get(1));
+		
+		assertEquals(expected, bt.getDefinitive()[0][0]);
 		
 	}
 	
@@ -59,6 +85,13 @@ class Battlefield_Test {
 		assertEquals(37, bt.getDefinitive()[1][0]);
 		assertEquals(22, bt.getDefinitive()[1][1]);
 		
+
+		setUp2();
+		
+		bt.MultiplationTwo(bt.getMatrices().get(0), bt.getMatrices().get(1));
+		
+		assertEquals(expected, bt.getDefinitive()[0][0]);
+		
 	}
 	
 	@Test
@@ -72,6 +105,12 @@ class Battlefield_Test {
 		assertEquals(10, bt.getDefinitive()[0][1]);
 		assertEquals(37, bt.getDefinitive()[1][0]);
 		assertEquals(22, bt.getDefinitive()[1][1]);
+		
+		setUp2();
+
+		bt.MultiplationThree(bt.getMatrices().get(0), bt.getMatrices().get(1));
+		
+		assertEquals(expected, bt.getDefinitive()[0][0]);
 		
 	}
 }
