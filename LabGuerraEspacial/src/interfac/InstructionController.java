@@ -5,10 +5,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 
 public class InstructionController {
     @FXML
     private Button back;
+   
 
     @FXML
     void goBack(ActionEvent event) {
@@ -18,5 +20,7 @@ public class InstructionController {
     	}catch(Exception e) {
     		
     	}
+    	
     }
+   
 }

@@ -5,43 +5,36 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfac.StartController">
    <children>
-      <AnchorPane fx:id="space2" layoutX="160.0" prefHeight="800.0" prefWidth="642.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <Label layoutX="175.0" layoutY="112.0" text="space2" />
-         </children>
-      </AnchorPane>
-      <AnchorPane fx:id="space1" layoutX="167.0" layoutY="-1.0" prefHeight="800.0" prefWidth="704.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <Label layoutX="173.0" layoutY="120.0" text="space1" />
-         </children>
-      </AnchorPane>
-      <Button alignment="CENTER" contentDisplay="CENTER" layoutY="218.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#showSpace1" prefHeight="58.0" prefWidth="159.0" text="Multiplicacion" />
-      <Button layoutY="322.0" mnemonicParsing="false" onAction="#showSpace2" prefHeight="58.0" prefWidth="159.0" text="Lista de matrices" />
+      <BorderPane fx:id="space1" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="0.0" />
+      <BorderPane fx:id="space2" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="0.0" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutY="218.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#showSpace1" prefHeight="58.0" prefWidth="159.0" text="Multiplication" />
+      <Button alignment="CENTER" layoutY="322.0" mnemonicParsing="false" onAction="#showSpace2" prefHeight="58.0" prefWidth="159.0" text="Matrix List" />
       <AnchorPane fx:id="options1" layoutX="785.0" prefHeight="661.0" prefWidth="218.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="850.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Label layoutX="6.0" layoutY="116.0" text="Ingrese de numero filas" />
-            <TextField layoutX="5.0" layoutY="144.0" />
+            <TextField fx:id="rowMatrix1" layoutX="5.0" layoutY="144.0" />
             <Label layoutX="-1.0" layoutY="187.0" text="Ingrese el numero de columnas" />
-            <TextField layoutX="6.0" layoutY="211.0" />
+            <TextField fx:id="colMatrix1" layoutX="6.0" layoutY="211.0" />
             <Label layoutX="90.0" layoutY="66.0" text="Matriz 1" />
             <Label layoutX="73.0" layoutY="252.0" text="Matriz 2" />
             <Label layoutX="6.0" layoutY="294.0" text="Ingrese de numero filas" />
-            <TextField layoutX="5.0" layoutY="318.0" />
+            <TextField fx:id="rowMatrix2" layoutX="5.0" layoutY="318.0" />
             <Label layoutX="11.0" layoutY="353.0" text="Ingrese el numero de columnas" />
-            <TextField layoutX="5.0" layoutY="380.0" />
-            <ChoiceBox layoutX="8.0" layoutY="482.0" prefWidth="150.0" />
-            <Button layoutX="83.0" layoutY="565.0" mnemonicParsing="false" text="Generar" />
+            <TextField fx:id="colMatrix2" layoutX="5.0" layoutY="380.0" />
+            <ChoiceBox fx:id="cbRepeated" layoutX="8.0" layoutY="482.0" prefWidth="150.0" />
+            <Button layoutX="83.0" layoutY="565.0" mnemonicParsing="false" onAction="#generateMulti" text="Generar" />
             <Label layoutX="74.0" layoutY="14.0" text="OPCIONES">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
             <Label layoutX="6.0" layoutY="455.0" text="Indique si quiere valores repetidos" />
+            <Button layoutX="86.0" layoutY="628.0" mnemonicParsing="false" onAction="#showMulti" text="Multiplicar" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="options2" layoutX="782.0" layoutY="1.0" prefHeight="700.0" prefWidth="218.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="850.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
