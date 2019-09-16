@@ -47,7 +47,7 @@ public class HashTableOA <K,V> implements InterHashTable<K,V>{
 			int index = (hashNumberM(key) + (i * hashNumberD(key))) % T.length;
 			
 			if(T[index] != null) {
-				if(((Integer)T[index].getKey()).compareTo((Integer)key) == 0) {
+				if(((String)(T[index].getKey()).toString()).compareTo((String)key.toString()) == 0) {
 					value = T[index].getValue();
 					done = true;
 				}
@@ -74,7 +74,7 @@ public class HashTableOA <K,V> implements InterHashTable<K,V>{
 			
 			if(T[index] != null) {	
 				
-				if(((Integer)T[index].getKey()).compareTo((Integer)key) == 0) {
+				if(((String)(T[index].getKey()).toString()).compareTo((String)key.toString()) == 0) {
 					T[index] = null;
 					size--;
 					done = true;
@@ -96,13 +96,49 @@ public class HashTableOA <K,V> implements InterHashTable<K,V>{
 		return size == 0;
 	}
 
-	public int hashNumberM(K key) {		
+public int hashNumberM(K key) {		
+		
 		double a = (Math.sqrt(5) - 1) / 2;		
-		return (int)(T.length * ((a * (int)key)%1));		
+		int k =  0;
+		boolean pass = false;
+		
+		try {
+			k = hashString(key);
+		}catch(Exception e) {
+			pass =  true;
+		}
+		
+		if(!pass) {
+			try {
+				k = (Integer) key;
+			}catch(Exception e) {
+				
+			}
+		}			
+		
+		return (int)(T.length * ((a * (int)k)%1));		
 	}
 	
 	public int hashNumberD(K key) {
-		return (int)key % T.length;
+		
+		int k =  0;
+		boolean pass = false;
+		
+		try {
+			k = hashString(key);
+		}catch(Exception e) {
+			pass =  true;
+		}
+		
+		if(!pass) {
+			try {
+				k = (Integer) key;
+			}catch(Exception e) {
+				
+			}
+		}		
+	
+		return (int)k % T.length;
 	}
 	
 	public int hashString(K key) {
@@ -110,10 +146,6 @@ public class HashTableOA <K,V> implements InterHashTable<K,V>{
 		for(int i = 0; i < key.toString().length(); i++){
 			k ^= key.toString().charAt(i);
 		}
-		int index = (int)(size * ((k * ((Math.sqrt(5)-1)/2)) % 1));
-		if(index < 0){
-			index = index * -1;
-		}
-		return index;
+		return k;
 	}
 }

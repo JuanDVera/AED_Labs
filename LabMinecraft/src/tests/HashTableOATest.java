@@ -8,6 +8,7 @@ class HashTableOATest {
 	
 	private HashTableOA<Integer, Integer> T;
 	private HashTableOA<Integer, String> T2;
+	private HashTableOA<String, Integer> T3;
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	void setUp() throws Exception {		
@@ -25,6 +26,12 @@ class HashTableOATest {
 		T2.add(664, "mamá");
 		T2.add(23, "me");
 		T2.add(987, "mima");		
+	}
+	
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	void setUp3() throws Exception {		
+		
+		T3 = new HashTableOA(5);		
 	}
 	
 	@Test
@@ -49,6 +56,14 @@ class HashTableOATest {
 		} catch (HashException e) {
 			assertEquals("No Room Left",  e.getMessage());
 		}
+		
+		setUp3();
+		
+		T3.add("paco", 3);
+		assertEquals(1, T3.size());
+		T3.add("Sonic", 3);
+		T3.add("Gato", 3);
+		assertEquals(3, T3.size());
 	}
 	
 	@Test

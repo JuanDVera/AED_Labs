@@ -1,7 +1,774 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
-	
-<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="interface.Controller">
-	<!-- TODO Add Nodes -->
-</GridPane>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<TabPane prefHeight="517.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aplication.Controller">
+   <tabs>
+      <Tab closable="false" text="Inventario">
+         <content>
+            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="600.0">
+               <top>
+                  <VBox prefHeight="244.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="  Inventario" />
+                        <GridPane alignment="CENTER" gridLinesVisible="true" prefHeight="231.0" prefWidth="600.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="90.0" />
+                              <RowConstraints maxHeight="25.333328247070312" minHeight="0.0" prefHeight="0.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="90.0" />
+                            <RowConstraints minHeight="0.0" prefHeight="90.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="90.0" />
+                          </rowConstraints>
+                           <children>
+                              <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="2">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="3">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="4">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="5">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="6">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="7">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="8">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="44.0" prefWidth="42.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button fx:id="buttonSlot19" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.rowIndex="3">
+                                 <children>
+                                    <Button fx:id="buttonSlot10" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="8" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <children>
+                                    <Button fx:id="buttonSlot11" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="3">
+                                 <children>
+                                    <Button fx:id="buttonSlot17" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                                 <children>
+                                    <Button fx:id="buttonSlot16" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                                 <children>
+                                    <Button fx:id="buttonSlot15" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                 <children>
+                                    <Button fx:id="buttonSlot14" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                 <children>
+                                    <Button fx:id="buttonSlot13" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <children>
+                                    <Button fx:id="buttonSlot12" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="8" GridPane.rowIndex="3">
+                                 <children>
+                                    <Button fx:id="buttonSlot18" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <children>
+                                    <Button fx:id="buttonSlot2" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.rowIndex="4">
+                                 <children>
+                                    <Button fx:id="buttonSlot1" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="4">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="8" GridPane.rowIndex="4">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </GridPane>
+                        <Separator prefWidth="600.0" />
+                     </children>
+                  </VBox>
+               </top>
+               <center>
+                  <VBox prefHeight="61.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="  Items" />
+                        <GridPane gridLinesVisible="true" prefHeight="230.0" prefWidth="600.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <VBox alignment="CENTER" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button fx:id="buttonGM" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="1">
+                                 <children>
+                                    <Button fx:id="buttonAW" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="3">
+                                 <children>
+                                    <Button fx:id="buttonBC" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="5">
+                                 <children>
+                                    <Button fx:id="buttonCA" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="4">
+                                 <children>
+                                    <Button fx:id="buttonC" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button fx:id="buttonLL" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button fx:id="buttonL" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="2">
+                                 <children>
+                                    <Button fx:id="buttonB" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="6">
+                                 <children>
+                                    <Button fx:id="buttonD" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="8">
+                                 <children>
+                                    <Button fx:id="buttonGB" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="7">
+                                 <children>
+                                    <Button fx:id="buttonG" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button fx:id="buttonRS" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button fx:id="buttonP" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button fx:id="buttonSP" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="8" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button fx:id="buttonSM" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button fx:id="buttonSB" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button fx:id="buttonS" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button fx:id="buttonRW" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button fx:id="buttonT" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER">
+                                 <children>
+                                    <Button fx:id="buttonAS" mnemonicParsing="false" text="button">
+                                       <effect>
+                                          <ImageInput>
+                                             <source>
+                                                <Image url="file:/C:/Users/JuanDavid/OneDrive/Universidad/Carrera/Programacion/AED/AED_Labs/LabMinecraft/pics/AS.png" />
+                                             </source>
+                                          </ImageInput>
+                                       </effect></Button>
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button fx:id="buttonTR" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button fx:id="buttonTRS" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button fx:id="buttonWC" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button fx:id="buttonYD" mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </GridPane>
+                        <Separator prefWidth="200.0" />
+                     </children>
+                  </VBox>
+               </center>
+               <bottom>
+                  <GridPane prefHeight="66.0" prefWidth="600.0" BorderPane.alignment="BOTTOM_CENTER">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="TOP_CENTER" text="Cantidad de elementos a agregar" GridPane.rowIndex="1" />
+                        <Spinner editable="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Spinner GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="Cantidad de elementos a eliminar" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+               </bottom>
+            </BorderPane>
+         </content>
+      </Tab>
+      <Tab closable="false" text="Barra Acceso Rapido">
+         <content>
+            <BorderPane prefHeight="485.0" prefWidth="598.0">
+               <top>
+                  <VBox alignment="CENTER" prefHeight="287.0" prefWidth="598.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="Seleccione un item para agregara la barra de  acceso rapido" textAlignment="CENTER" />
+                        <GridPane gridLinesVisible="true" prefHeight="286.0" prefWidth="598.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="8">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="7">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="6">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="5">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="8" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="8" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </top>
+               <bottom>
+                  <GridPane prefHeight="65.0" prefWidth="598.0" BorderPane.alignment="CENTER_RIGHT">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Spinner GridPane.columnIndex="1" />
+                        <Button mnemonicParsing="false" text="Siguiente" />
+                        <Button mnemonicParsing="false" text="Consumir" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </bottom>
+               <left>
+                  <GridPane prefHeight="135.0" prefWidth="598.0" BorderPane.alignment="CENTER">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="7">
+                           <children>
+                              <Separator prefWidth="200.0" />
+                              <Label text="Label" />
+                              <Label text="Label" />
+                              <Separator prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="8">
+                           <children>
+                              <Separator prefWidth="200.0" />
+                              <Label text="Label" />
+                              <Label text="Label" />
+                              <Separator prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4">
+                           <children>
+                              <Separator prefWidth="200.0" />
+                              <Label text="Label" />
+                              <Label text="Label" />
+                              <Separator prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3">
+                           <children>
+                              <Separator prefWidth="200.0" />
+                              <Label text="Label" />
+                              <Label text="Label" />
+                              <Separator prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+                           <children>
+                              <Separator prefWidth="200.0" />
+                              <Label text="Label" />
+                              <Label text="Label" />
+                              <Separator prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                           <children>
+                              <Separator prefWidth="200.0" />
+                              <Label text="Label" />
+                              <Label text="Label" />
+                              <Separator prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="6">
+                           <children>
+                              <Separator prefWidth="200.0" />
+                              <Label text="Label" />
+                              <Label text="Label" />
+                              <Separator prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="5">
+                           <children>
+                              <Separator prefWidth="200.0" />
+                              <Label text="Label" />
+                              <Label text="Label" />
+                              <Separator prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Separator prefWidth="200.0" />
+                              <Label text="Label" />
+                              <Label text="Label" />
+                              <Separator prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </GridPane>
+               </left>
+            </BorderPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>
